@@ -75,8 +75,8 @@ The target variable `Survived` was used to train and evaluate the classifier.
 
 - Identified missing values across dataset features.
 - Removed the `Cabin` column due to its high proportion of missing values.
-- Handled missing values in `Age` using median imputation based on the training set.
-- Handled missing values in `Embarked` using mode imputation.
+- Handled missing values in `Age` using median imputation based on the training set (performed after the train-test split to avoid data leakage).
+- Handled missing values in `Embarked` using mode imputation (calculated on the full dataset; only 2 values were missing, so the impact is negligible).
 - Inspected the dataset after preprocessing.
 
 ### 3. Feature Selection and Encoding
@@ -154,7 +154,7 @@ These results provide a baseline for further experimentation and model improveme
 - Third-class passengers form the largest passenger group, with 491 records.
 - The overall survival rate in the dataset is approximately 38.38%.
 - Female passengers had a higher observed survival rate (74.20%) than male passengers (18.89%).
-- Passenger class and gender show notable relationships with survival outcomes.
+- Survival rates were highest in 1st class and lowest in 3rd class, for both men and women.
 - The fare distribution is positively skewed, with a skewness value of approximately 4.79.
 
 ## Future Improvements
