@@ -176,7 +176,8 @@ The current implementation establishes a baseline for Titanic survival predictio
 **1. Clone the repository**
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone    git clone https://github.com/areebamubarik10-spec/Titanic-Survival-Prediction.git
+   cd Titanic-Survival-Prediction
 ```
 
 **2. Install the required libraries**
